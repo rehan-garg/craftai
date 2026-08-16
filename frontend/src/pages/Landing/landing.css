@@ -1,0 +1,79 @@
+@keyframes landing-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes landing-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes landing-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes landing-pulse-glow {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.landing-animate-float {
+  animation: landing-float 5s ease-in-out infinite;
+}
+
+.landing-animate-fade-in-up {
+  animation: landing-fade-in-up 0.7s ease-out both;
+}
+
+.landing-animate-fade-in {
+  animation: landing-fade-in 0.6s ease-out both;
+}
+
+.landing-animate-pulse-glow {
+  animation: landing-pulse-glow 4s ease-in-out infinite;
+}
+
+.landing-delay-100 {
+  animation-delay: 100ms;
+}
+
+.landing-delay-200 {
+  animation-delay: 200ms;
+}
+
+.landing-delay-300 {
+  animation-delay: 300ms;
+}
+
+.landing-delay-400 {
+  animation-delay: 400ms;
+}
+
+.landing-delay-500 {
+  animation-delay: 500ms;
+}

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply bg-amber-50 font-sans text-slate-900;
+    font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  }
+}
