@@ -222,8 +222,14 @@ function ProductStudio() {
     payload.append('notes', formData.notes);
 
     try {
+      const API_URL = import.meta.env.VITE_API_URL;
+
+      if (!API_URL) {
+        throw new Error('VITE_API_URL is not configured');
+      }
+
       const response = await fetch(
-        'http://127.0.0.1:8000/generate',
+        `${API_URL}/generate`,
         {
           method: 'POST',
           body: payload,
